@@ -72,7 +72,8 @@ const schemaUpdateContact = Joi.object({
 });
 
 const validationAddContact = (object) => schemaAddContact.validate(object);
-const validationUpdateContact = (object) => schemaUpdateContact.validate(object);
+const validationUpdateContact = (object) =>
+  schemaUpdateContact.validate(object);
 
 module.exports = {
   validationAddContact,
